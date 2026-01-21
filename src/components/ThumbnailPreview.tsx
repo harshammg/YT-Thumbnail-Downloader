@@ -18,7 +18,7 @@ const qualityLabels: Record<YouTubeQuality, { label: string; resolution: string 
 const qualityOrder: YouTubeQuality[] = ['default', 'medium', 'high', 'maxres'];
 
 export function ThumbnailPreview({ data }: ThumbnailPreviewProps) {
-  const [selectedQuality, setSelectedQuality] = useState<YouTubeQuality>('high');
+  const [selectedQuality, setSelectedQuality] = useState<YouTubeQuality>('maxres');
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadSuccess, setDownloadSuccess] = useState(false);
 
