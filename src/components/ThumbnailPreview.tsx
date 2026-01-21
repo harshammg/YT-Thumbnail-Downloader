@@ -160,7 +160,8 @@ export function ThumbnailPreview({ data }: ThumbnailPreviewProps) {
             ) : (
               <>
                 <Download className="w-5 h-5" />
-                <span>Download {qualityLabels[selectedQuality].label} ({qualityLabels[selectedQuality].resolution})</span>
+                <span className="hidden sm:inline-block">Download {qualityLabels[selectedQuality].label} ({qualityLabels[selectedQuality].resolution})</span>
+                <span className="sm:hidden">Download {qualityLabels[selectedQuality].label}</span>
               </>
             )}
           </Button>
